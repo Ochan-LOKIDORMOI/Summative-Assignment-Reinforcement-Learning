@@ -1,11 +1,17 @@
 # **Summative Assignment - Reinforcement Learning**
 
-# Wildlife Intrusion Prevention using Reinforcement Learning
+## Wildlife Intrusion Prevention using Reinforcement Learning
 
 ## Project Overview
-This project implements reinforcement learning techniques to prevent wildlife intrusion in agricultural areas. The simulation models a farm environment where an agent must protect crops by capturing approaching wildlife before they cause damage. Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**, were implemented and compared for effectiveness in this discrete grid-world environment.
+This project implements reinforcement learning techniques to prevent wildlife intrusion in agricultural areas. 
+
+The simulation models a farm environment where an agent must protect crops by capturing approaching wildlife before they cause damage.
+
+Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**, were implemented and compared for effectiveness in this discrete grid-world environment.
 
 ## Environment Description
+
+![Image](https://github.com/user-attachments/assets/a6d929fc-6c4b-491f-88e8-42828294db91)
 ### Agent(s)
 - A single agent representing a wildlife prevention unit.
 - Moves on a 5x5 grid with four cardinal directions (up, down, left, right).
@@ -30,7 +36,7 @@ Includes:
 - **-2.0** for wildlife reaching the farm.
 - **-0.1** per step to encourage efficiency.
 - Additional penalties for wildlife near the farm.
-
+- 
 Mathematically:  
 `R = 5 × captures - 2 × intrusions - 0.1 × steps`
 
@@ -68,6 +74,8 @@ Mathematically:
 | Entropy Coefficient    | 0.02          | Balanced exploration and exploitation.                                  |
 
 ## Results
+
+![Image](https://github.com/user-attachments/assets/ef501f1f-6dd3-44fd-bd78-2244bd4afb2f)
 ### Quantitative Findings
 | Metric                  | DQN           | PPO           |
 |-------------------------|---------------|---------------|
