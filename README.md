@@ -10,10 +10,11 @@ The simulation models a farm environment where an agent must protect crops by ca
 Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**, were implemented and compared for effectiveness in this discrete grid-world environment.
 
 ## Repository Structure
-`
+
+Summative Assignment/
 │-- environment/              # Custom Gymnasium environment
-  │-- custom_env.py         # Custom environment implementation
-  │-- rendering.py          # Visualization components using PyOpenGL
+│   │-- custom_env.py         # Custom environment implementation
+│   │-- rendering.py          # Visualization components using PyOpenGL
 │
 │-- training/                 # Training scripts using SB3
 │   │-- dqn_training.py       # Training script for DQN
@@ -25,8 +26,7 @@ Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO
 │
 │-- main.py                    # Entry point for running experiments
 │-- requirements.txt           # Project dependencies
-│-- README.md
-` 
+│-- README.md                  # Project documentation
 
 ## Environment Description
 
