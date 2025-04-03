@@ -1,0 +1,17 @@
+numpy==2.2.4
+pandas==2.2.3gym==0.26.2
+stable_baselines3==2.6.0
+gym-notices==0.0.8
+gymnasium==1.1.1
+imageio==2.37.0
+matplotlib==3.10.1
+pillow==11.1.0
+pygame==2.6.1
+Pygments==2.19.1
+PyOpenGL==3.1.9
+PyOpenGL-accelerate==3.1.9
+pyparsing==3.2.2
+seaborn==0.13.2
+tensorboard==2.19.0
+tensorboard-data-server==0.7.2
+torch==2.6.0
