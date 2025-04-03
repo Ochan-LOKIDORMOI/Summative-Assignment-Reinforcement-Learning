@@ -9,6 +9,24 @@ The simulation models a farm environment where an agent must protect crops by ca
 
 Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**, were implemented and compared for effectiveness in this discrete grid-world environment.
 
+## Repository Structure
+
+│-- environment/              # Custom Gymnasium environment
+│   │-- custom_env.py         # Custom environment implementation
+│   │-- rendering.py          # Visualization components using PyOpenGL
+│
+│-- training/                 # Training scripts using SB3
+│   │-- dqn_training.py       # Training script for DQN
+│   │-- pg_training.py        # Training script for PPO/other policy gradient methods
+│
+│-- models/                   # Saved models directory
+│   │-- dqn/                  # Saved DQN models
+│   │-- pg/                   # Saved policy gradient models
+│
+│-- main.py                    # Entry point for running experiments
+│-- requirements.txt           # Project dependencies
+│-- README.md                  # Project documentation
+
 ## Environment Description
 
 ![Image](https://github.com/user-attachments/assets/a6d929fc-6c4b-491f-88e8-42828294db91)
@@ -90,6 +108,21 @@ Mathematically:
 - **PPO Characteristics**:
   - Slower but steadier improvement.
   - Greater variance, suggesting more exploratory behavior.
+ 
+## Training Stability
+![Image](https://github.com/user-attachments/assets/7d7df591-b215-46f7-ab67-ed8a47660639)   ![Image](https://github.com/user-attachments/assets/bc492a1a-59e1-415f-a0db-9a83e880a933)
+
+- DQN's loss convergence  demonstrates stable learning, with TD error plateauing at 0.1 after 40k steps.
+   
+- PPO maintained controlled exploration through entropy decay , reaching optimal stochasticity (-1.8) by 60k steps.
+
+## Generalization
+
+![Image](https://github.com/user-attachments/assets/0059a073-e30a-418e-8825-101511f8255b)  ![Image](https://github.com/user-attachments/assets/1f409cc3-19cd-4dba-bbff-d5f1c43fac43)
+
+
+Both models demonstrated reasonable generalization, but DQN outperformed PPO by 17-22% in success rates across unseen spawn configurations.
+
 
 ## Conclusion
 **DQN outperformed PPO** in this task, demonstrating:
@@ -104,13 +137,34 @@ Mathematically:
 - **For PPO**:
   - Apply reward shaping or curriculum learning.
   - Consider hybrid approaches combining DQN's value estimation with PPO's policy gradients.
+ 
+## Installation Instructions
 
-## Repository Structure
-- `dqn/`: Code and models for DQN implementation.
-- `ppo/`: Code and models for PPO implementation.
-- `environment/`: Simulation environment and visualization tools.
-- `results/`: Training logs and performance metrics.
+Clone this repository:
 
-## Links
-- **Video Recording**: [Link to your Video]
-- **GitHub Repository**: [Link to your repository]
+`git clone https://github.com/Ochan-LOKIDORMOI/Summative-Assignment-Reinforcement-Learning.git`
+
+To install the required dependencies, run:
+
+`pip install -r requirements.txt`
+
+## Usage
+To train a DQN agent, run:
+
+`python training/dqn_training.py`
+
+To train a policy gradient agent (e.g., PPO), run:
+
+`python training/pg_training.py`
+
+To see the model performace, run:
+
+`python main.py`
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Contact
+
+For any questions or contributions, feel free to submit an issue or a pull request.
