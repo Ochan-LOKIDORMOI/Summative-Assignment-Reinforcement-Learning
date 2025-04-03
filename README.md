@@ -11,9 +11,12 @@ Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO
 
 ## Repository Structure
 
-Summative Assignment/
+Summative Assignment
+
 │--environment/              # Custom Gymnasium environment
+
    │-- custom_env.py         # Custom environment implementation
+   
    │-- rendering.py          # Visualization components using PyOpenGL
 
 │-- training/                 # Training scripts using SB3
