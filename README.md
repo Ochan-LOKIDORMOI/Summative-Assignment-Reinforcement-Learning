@@ -10,26 +10,21 @@ The simulation models a farm environment where an agent must protect crops by ca
 Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**, were implemented and compared for effectiveness in this discrete grid-world environment.
 
 ## Repository Structure
-
-Summative Assignment
-
-│--environment/              # Custom Gymnasium environment
-
-   │-- custom_env.py         # Custom environment implementation
-   
-   │-- rendering.py          # Visualization components using PyOpenGL
-
-│-- training/                 # Training scripts using SB3
-   │-- dqn_training.py       # Training script for DQN
-   │-- pg_training.py        # Training script for PPO/other policy gradient methods
-
-│--models/                   # Saved models directory
-   │-- dqn/                  # Saved DQN models
-   │-- pg/                   # Saved policy gradient models
-
-│--main.py                    # Entry point for running experiments
-│--requirements.txt           # Project dependencies
-│--README.md                  # Project documentation
+```
+project_root/
+├── environment/
+│   ├── custom_env.py            # Custom Gymnasium environment implementation
+│   ├── rendering.py             # Visualization components using PyOpenGL
+├── training/
+│   ├── dqn_training.py          # Training script for DQN using SB3
+│   ├── pg_training.py           # Training script for PPO/other PG using SB3
+├── models/
+│   ├── dqn/                     # Saved DQN models
+│   └── pg/                      # Saved policy gradient models
+├── main.py                      # Entry point for running experiments
+├── requirements.txt             # Project dependencies
+└── README.md                    # Project documentation
+```
 
 ## Environment Description
 
