@@ -13,22 +13,21 @@ Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO
 
 │-- environment/  # Custom Gymnasium environment
 
-│   │-- custom_env.py         # Custom environment implementation
+ │-- custom_env.py         # Custom environment implementation
+ │-- rendering.py          # Visualization components using PyOpenGL
 
-│   │-- rendering.py          # Visualization components using PyOpenGL
-│
 │-- training/                 # Training scripts using SB3
 
-│   │-- dqn_training.py       # Training script for DQN
+   │-- dqn_training.py       # Training script for DQN
 
-│   │-- pg_training.py        # Training script for PPO/other policy gradient methods
-│
+   │-- pg_training.py        # Training script for PPO/other policy gradient methods
+
 │-- models/                   # Saved models directory
 
-│   │-- dqn/                  # Saved DQN models
+   │-- dqn/                  # Saved DQN models
 
-│   │-- pg/                   # Saved policy gradient models
-│
+   │-- pg/                   # Saved policy gradient models
+
 │-- main.py                    # Entry point for running experiments
 
 │-- requirements.txt           # Project dependencies
