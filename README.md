@@ -12,8 +12,8 @@ Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO
 ## Repository Structure
 `
 │-- environment/              # Custom Gymnasium environment
-│   │-- custom_env.py         # Custom environment implementation
-│   │-- rendering.py          # Visualization components using PyOpenGL
+  │-- custom_env.py         # Custom environment implementation
+  │-- rendering.py          # Visualization components using PyOpenGL
 │
 │-- training/                 # Training scripts using SB3
 │   │-- dqn_training.py       # Training script for DQN
