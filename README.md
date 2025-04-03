@@ -91,7 +91,7 @@ Mathematically:
 | clip_range             | 0.15          | Tighter than standard for conservative updates.                         |
 | Entropy Coefficient    | 0.02          | Balanced exploration and exploitation.                                  |
 
-## Results
+## Results Visualizations
 
 ![Image](https://github.com/user-attachments/assets/ef501f1f-6dd3-44fd-bd78-2244bd4afb2f)
 ### Quantitative Findings
