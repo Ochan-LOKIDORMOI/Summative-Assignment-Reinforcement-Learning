@@ -56,7 +56,7 @@ Includes:
 - Additional penalties for wildlife near the farm.
 - 
 Mathematically:  
-`R = 5 × captures - 2 × intrusions - 0.1 × steps`
+```R = 5 × captures - 2 × intrusions - 0.1 × steps```
 
 ## Implemented Methods
 ### Deep Q-Network (DQN)
@@ -142,24 +142,24 @@ Both models demonstrated reasonable generalization, but DQN outperformed PPO by 
 
 Clone this repository:
 
-`git clone https://github.com/Ochan-LOKIDORMOI/Summative-Assignment-Reinforcement-Learning.git`
+```git clone https://github.com/Ochan-LOKIDORMOI/Summative-Assignment-Reinforcement-Learning.git```
 
 To install the required dependencies, run:
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 ## Usage
 To train a DQN agent, run:
 
-`python training/dqn_training.py`
+```python training/dqn_training.py```
 
 To train a policy gradient agent (e.g., PPO), run:
 
-`python training/pg_training.py`
+```python training/pg_training.py```
 
 To see the model performace, run:
 
-`python main.py`
+```python main.py```
 
 ## License
 
