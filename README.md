@@ -12,25 +12,26 @@ Two algorithms, **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO
 ## Repository Structure
 
 Summative Assignment/
-│-- environment/              # Custom Gymnasium environment
-│   │-- custom_env.py         # Custom environment implementation
-│   │-- rendering.py          # Visualization components using PyOpenGL
-│
+│--environment/              # Custom Gymnasium environment
+   │-- custom_env.py         # Custom environment implementation
+   │-- rendering.py          # Visualization components using PyOpenGL
+
 │-- training/                 # Training scripts using SB3
-│   │-- dqn_training.py       # Training script for DQN
-│   │-- pg_training.py        # Training script for PPO/other policy gradient methods
-│
-│-- models/                   # Saved models directory
-│   │-- dqn/                  # Saved DQN models
-│   │-- pg/                   # Saved policy gradient models
-│
-│-- main.py                    # Entry point for running experiments
-│-- requirements.txt           # Project dependencies
-│-- README.md                  # Project documentation
+   │-- dqn_training.py       # Training script for DQN
+   │-- pg_training.py        # Training script for PPO/other policy gradient methods
+
+│--models/                   # Saved models directory
+   │-- dqn/                  # Saved DQN models
+   │-- pg/                   # Saved policy gradient models
+
+│--main.py                    # Entry point for running experiments
+│--requirements.txt           # Project dependencies
+│--README.md                  # Project documentation
 
 ## Environment Description
 
 ![Image](https://github.com/user-attachments/assets/a6d929fc-6c4b-491f-88e8-42828294db91)
+
 ### Agent(s)
 - A single agent representing a wildlife prevention unit.
 - Moves on a 5x5 grid with four cardinal directions (up, down, left, right).
